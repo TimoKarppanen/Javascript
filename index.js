@@ -9,11 +9,12 @@ function ageinDays(){
     /* Create a html element called as "h1" */
 
     var h1 = document.createElement("h1");
+
     var textAnswer = document.createTextNode("you are" + answer + "days old");
 
     /* Set attributes to h1 */
 
-    h1.setAttribute("id", "ageindays");
+    h1.setAttribute("id", "ageinDays");
 
     /* Append "textAnswer to a list ?" */
     
@@ -29,24 +30,24 @@ function ageinDays(){
 
     function reset(){
 
-        alert("the reset button ain't working properly yet.");
+        /* We get the element by id... and then delete it. */
 
-        document.getElementById(ageinDays).remove();
-    
+        document.getElementById('ageinDays').remove();
+
     }
 
     
     function GenerateCat(){
 
-        alert("this function is working");
+       /* alert("this function is working"); */
 
         /* Creating a HTML element called image */
 
-        var image = document.createElement("img");
+        var image = document.createElement('img');
 
         var div = document.getElementById("flex-cat-gen");
 
-        image.src ="https://giphy.com/gifs/link-the-legend-of-zelda-NVBR6cLvUjV9C";
+        image.src ="thecatapi.com/api/images/get?format=src&type=gif&size=small";
 
         div.appendChild(image);
 

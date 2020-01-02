@@ -13,6 +13,7 @@
     border: 1px solid black;
     padding: 10px;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -34,17 +35,11 @@
 .flex-box-container-2{
  display: flex;
  flex-wrap: wrap;
+ justify-content:space-around;
  border: 1px solid blue;
- justify-content: space-around;
-
 }
 
 .flex-box-container-2 img{
     border: 1px solid green;
     padding: 10px;
-
 }
-
-
-
-
