@@ -55,10 +55,12 @@ function ageinDays(){
 
     }
 
+    /* Parameter not being used yet */
+
     function rpsGame(yourChoice){
         
 
-        console.log(yourChoice);
+        console.log('your choice',yourChoice);
         
         let humanChoice;
 
@@ -72,7 +74,7 @@ function ageinDays(){
 
         botChoice = numberToChoice(randToRpsInt());
 
-        console.log(botChoice);
+        console.log('bot choice',botChoice);
 
         /*message = finalMessage(){
 
@@ -103,7 +105,26 @@ function ageinDays(){
     function numberToChoice(number){
         return ['rock','paper','scissors'][number];
     }
-      
+    
+
+    function decideWinner(yourChoice,computerChoice){
+
+        let rpsDatabase = {
+            'rock': {
+                'scissors': 1, 'rock': 0.5, 'paper': 0},
+
+                'paper': {
+                    'rock': 1,'paper': 0.5, 'scissors':0},
+                
+                'scissors':{
+                    'paper': 1, 'scissors': 0.5, 'rock':0}
+                }
+
+
+                }
+            }
+        }
+    }
 
 
 
