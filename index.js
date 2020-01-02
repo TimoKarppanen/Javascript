@@ -10,6 +10,8 @@ function ageinDays(){
 
     var h1 = document.createElement("h1");
 
+    /* Create a textnode */
+
     var textAnswer = document.createTextNode("you are" + answer + "days old");
 
     /* Set attributes to h1 */
@@ -51,6 +53,55 @@ function ageinDays(){
 
         div.appendChild(image);
 
+    }
+
+    function rpsGame(yourChoice){
+        
+
+        console.log(yourChoice);
+        
+        let humanChoice;
+
+        let botChoice;
+
+        //humanChoice = yourChoice.id;
+
+        // results = decideWinner(humanChoice,botChoice);
+        
+        
+
+        botChoice = numberToChoice(randToRpsInt());
+
+        console.log(botChoice);
+
+        /*message = finalMessage(){
+
+            alert("You won");
+
+        }
+        */
+        /*
+        rpsFrontEnd(yourChoice.id, botChoice, message)
+        */
+    }
+
+    /* math random() returns a number between 0 and 1.
+    
+        math.floor() returns the largest integer number.
+    */
+
+
+    function randToRpsInt(){
+
+        return Math.floor(Math.random()*3);
+
+    }
+
+
+    /* if number is 0, it will return rock ... and so on */
+
+    function numberToChoice(number){
+        return ['rock','paper','scissors'][number];
     }
       
 
