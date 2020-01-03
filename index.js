@@ -120,11 +120,13 @@ function ageinDays(){
                     'paper': 1, 'scissors': 0.5, 'rock':0}
                 }
 
+                let yourScore = rpsDatabase[yourChoice][computerChoice]
+
 
                 }
-            }
-        }
-    }
+            
+        
+    
 
 
 
