@@ -55,26 +55,47 @@ function ageinDays(){
 
     }
 
-    /* Parameter not being used yet */
+    /* Parameter "yourChoice" not being used yet */
 
     function rpsGame(yourChoice){
         
 
         console.log('your choice',yourChoice);
+
+        
         
         let humanChoice;
 
         let botChoice;
 
-        //humanChoice = yourChoice.id;
+        let results;
 
-        // results = decideWinner(humanChoice,botChoice);
-        
-        
+        humanChoice = yourChoice.id;
 
         botChoice = numberToChoice(randToRpsInt());
 
         console.log('bot choice',botChoice);
+
+        results = decideWinner(humanChoice,botChoice);
+        console.log(results);
+        
+
+        
+
+        
+        /*
+
+        results = decideWinner(humanChoice,botChoice);
+
+        
+
+        console.log(results);
+
+        */
+        
+        /*  */
+
+        
 
         /*message = finalMessage(){
 
@@ -88,7 +109,6 @@ function ageinDays(){
     }
 
     /* math random() returns a number between 0 and 1.
-    
         math.floor() returns the largest integer number.
     */
 
@@ -118,9 +138,18 @@ function ageinDays(){
                 
                 'scissors':{
                     'paper': 1, 'scissors': 0.5, 'rock':0}
-                }
+                };
 
-                let yourScore = rpsDatabase[yourChoice][computerChoice]
+                console.log("jegzlop");
+
+                var yourScore = rpsDatabase[yourChoice][computerChoice];
+
+                var computerScore = rpsDatabase[computerChoice][yourChoice];
+
+                return [yourScore,computerScore];
+
+
+
 
 
                 }
